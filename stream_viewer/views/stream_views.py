@@ -7,8 +7,8 @@ import numpy as np
 
 bp = Blueprint('stream', __name__, url_prefix='/stream')
 
-host = '192.168.0.27'
-# host = '127.0.0.1'
+# host = '192.168.0.27'
+host = '127.0.0.1'
 port = 5555
 context = zmq.Context()
 socket = context.socket(zmq.SUB)
